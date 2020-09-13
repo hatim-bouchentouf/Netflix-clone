@@ -1,0 +1,63 @@
+.head {
+  color: white;
+  object-fit: contain;
+  height: 100vh;
+  width: 100%;
+}
+.logo .nav_logo {
+  top: 20px;
+}
+.header_contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+.header_title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-bottom: 4rem;
+}
+.subTitle {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.emailFormTitle {
+  padding: 0 10%;
+  padding: 0 5%;
+  max-width: 450px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+h3 {
+  font-size: 18px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.inputEmail {
+  text-align: center;
+  display: block;
+}
+.inputEmail .email {
+  width: 40%;
+  height: 40px;
+}
+.header_button .btn {
+  margin-top: 20px;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  transition-duration: 0.4s;
+  text-shadow: 2px 2px black;
+}
+.btn:hover {
+  background-color: #111;
+  text-shadow: 2px 2px red;
+}

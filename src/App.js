@@ -1,27 +1,18 @@
 import React from "react";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Row from "./components/Row";
-import Banner from "./components/Banner.jsx";
-import Nav from "./components/Nav.jsx";
-import request from "./request";
+import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div className="app">
-      <Nav />
-      <Banner />
-      <Row
-        title="Netflix Originals"
-        fetchUrl={request.fetchNetflexOriginals}
-        isLargeRow
-      />
-      <Row title="Trending Now" fetchUrl={request.fetchTrending} />
-      <Row title="Top Rated" fetchUrl={request.fetchTopRated} />
-      <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
-      <Row title="Comedy Movies" fetchUrl={request.fetchComedyMovies} />
-      <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
-      <Row title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
-      <Row title="Documentaties" fetchUrl={request.fetchDocumentries} />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/Home" component={HomePage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
