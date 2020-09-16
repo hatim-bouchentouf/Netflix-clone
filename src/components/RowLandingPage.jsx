@@ -40,7 +40,7 @@ function RowLandingPage() {
               placeholder="Adresse e-mail"
             />
             <div className="header_button">
-              <Link to="/Home">
+              <Link to="/App">
                 <button className="btn">COMMENCER ...</button>
               </Link>
             </div>
